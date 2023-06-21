@@ -4,12 +4,16 @@ import { LoginComponent } from './components/signin/login.component';
 import { RegisterComponent } from './components/singup/register.component';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
+import { PostListComponent } from './components/post-list/post-list.component';
+import { CreatePostComponent } from './components/create-post/create-post.component';
 
 const routes: Routes = [
   { path: 'signin', component: LoginComponent },
   { path: '', component: RegisterComponent },
 
   { path: 'signup', component: RegisterComponent },
+  { path: 'postlist', component: PostListComponent },
+  { path: 'createpost', component: CreatePostComponent },
   { path: 'home', component: HomeComponent }
   // { path: '', component: AppComponent } // Add this line to map root URL to AppComponent
 ];

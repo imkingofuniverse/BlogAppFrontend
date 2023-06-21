@@ -13,6 +13,8 @@ import { LoginComponent } from './components/signin/login.component';
 import { RegisterComponent } from './components/singup/register.component';
 import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { PostListComponent } from './components/post-list/post-list.component';
+import { CreatePostComponent } from './components/create-post/create-post.component';
 
 
 @NgModule({
@@ -21,7 +23,9 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     LoginComponent,
     RegisterComponent,
     HomeComponent,
-    NavbarComponent
+    NavbarComponent,
+    PostListComponent,
+    CreatePostComponent
   ],
   imports: [
     BrowserModule,
