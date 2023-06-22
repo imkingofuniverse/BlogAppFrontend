@@ -4,6 +4,7 @@
       <div class="container">
         <h1>Login</h1>
         <form (ngSubmit)="login()">
+          <div class="alert alert-warning" *ngIf="invalidLogin">{{errorMessage}}</div>
           <div class="form-group">
             <label>Email:</label>
             <input
@@ -13,6 +14,11 @@
               [(ngModel)]="loginForm.username"
               required
             />
+            <small *ngIf="error" class="text-danger">
+
+              {{error.error.username}}
+
+            </small>
           </div>
           <div class="form-group">
             <label>Password:</label>
@@ -23,9 +29,20 @@
               [(ngModel)]="loginForm.password"
               required
             />
+            <small *ngIf="error" class="text-danger">
+
+              {{error.error.password}}
+
+            </small>
           </div>
+          
           <button type="submit" class="btn btn-primary">Login</button>
         </form>
+        <a class="btn btn-sm btnLight" routerLink="/signup">
+
+          Don't have an account? Register
+
+        </a>
       </div>
     </div>
   </div>
@@ -77,4 +94,4 @@
         </div>
   </div>
 </div> -->
--->
+

@@ -13,6 +13,10 @@ import { LoginComponent } from './components/signin/login.component';
 import { RegisterComponent } from './components/singup/register.component';
 import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { LogoutComponent } from './components/logout/logout.component';
+import { ProfileComponent } from './components/profile/profile.component';
+import { EditComponent } from './components/edit/edit.component';
 
 
 @NgModule({
@@ -21,7 +25,12 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     LoginComponent,
     RegisterComponent,
     HomeComponent,
-    NavbarComponent
+    NavbarComponent,
+    FooterComponent,
+    LogoutComponent,
+    ProfileComponent,
+    EditComponent,
+
   ],
   imports: [
     BrowserModule,
