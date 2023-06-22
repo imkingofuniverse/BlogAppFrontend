@@ -16,7 +16,7 @@ export class PostService {
     return this.httpClient.get<Post[]>(`${this.baseURL}`);
   }
 
-  createCustomer(post: Post): Observable<Object> {
+  createPost(post: Post): Observable<Object> {
     return this.httpClient.post(`${this.baseURL}`, post);
   }
 
