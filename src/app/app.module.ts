@@ -15,6 +15,9 @@ import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { PostListComponent } from './components/post-list/post-list.component';
 import { CreatePostComponent } from './components/create-post/create-post.component';
+import { GetCommentComponent } from './components/get-comment/get-comment.component';
+import { CreateCommentComponent } from './components/create-comment/create-comment.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -25,7 +28,9 @@ import { CreatePostComponent } from './components/create-post/create-post.compon
     HomeComponent,
     NavbarComponent,
     PostListComponent,
-    CreatePostComponent
+    CreatePostComponent,
+    GetCommentComponent,
+    CreateCommentComponent
   ],
   imports: [
     BrowserModule,
@@ -33,6 +38,7 @@ import { CreatePostComponent } from './components/create-post/create-post.compon
     FormsModule,
     HttpClientModule,
     RouterModule,
+    BrowserAnimationsModule,
     
   ],
   providers: [],

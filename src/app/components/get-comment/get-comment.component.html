@@ -1,0 +1,48 @@
+<p>get-comment works!</p>
+
+<div style="min-height: 78vh;">
+    <h2>List of Comments</h2>
+    <table class="table table-striped">
+        <thead>
+
+            <tr>
+                <th> Id</th>
+                <th> Name</th>
+                <th> Email</th>
+                <th> Content/th>
+
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr *ngFor="let comment of comments">
+                <td> {{ comment.id }} </td>
+                <td> {{ comment.name }} </td>
+                <td> {{ comment.email }} </td>
+                <td> {{ comment.content }} </td>
+                <!-- <td>
+                    <button (click)="updatePost(post.id)" class="btn btn-info">Update</button>
+                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+
+                    <button (click)="deletePost(post.id)" class="btn btn-danger"
+                        style="margin-left: 10px">
+                        Delete</button>
+                </td> -->
+
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- <div>
+    <mat-card>
+        <mat-card-title>Title</mat-card-title>
+        <mat-card-subtitle>	Card subtitle</mat-card-subtitle>
+        <mat-card-content>	Primary card content. Intended for blocks of text</mat-card-content>
+        <img mat-card-image>	Card image. Stretches the image to the container width
+        <mat-card-actions align="end">	<button>One</button> <button>One</button></mat-card-actions>
+        <mat-card-footer>	Section anchored to the bottom of the card</mat-card-footer>
+    </mat-card>
+    </div> -->
+
+
+</div>

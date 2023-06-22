@@ -30,6 +30,10 @@ export class PostListComponent {
     this.router.navigate(['update-post', id]);
   }
 
+  viewComment(id: number) {
+    this.router.navigate(['viewcomment', id]);
+  }
+
   deletePost(id: number) {
     if (confirm("Do you want to delete?")) {
       this.postService.deletePost(id).subscribe(data => {
