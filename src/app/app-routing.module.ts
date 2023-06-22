@@ -7,6 +7,7 @@ import { HomeComponent } from './components/home/home.component';
 import { PostListComponent } from './components/post-list/post-list.component';
 import { CreatePostComponent } from './components/create-post/create-post.component';
 import { GetCommentComponent } from './components/get-comment/get-comment.component';
+import { CreateCommentComponent } from './components/create-comment/create-comment.component';
 
 const routes: Routes = [
   { path: 'signin', component: LoginComponent },
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'signup', component: RegisterComponent },
   { path: 'postlist', component: PostListComponent },
   { path: 'createpost', component: CreatePostComponent },
+  { path: 'createcomment/:id', component: CreateCommentComponent },
   { path: 'viewcomment/:id', component: GetCommentComponent },
   { path: 'home', component: HomeComponent }
   // { path: '', component: AppComponent } // Add this line to map root URL to AppComponent

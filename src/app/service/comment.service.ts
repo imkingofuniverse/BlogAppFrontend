@@ -16,8 +16,8 @@ export class CommentService {
     return this.httpClient.get<Comment[]>(`${this.baseURL}/${postId}/${this.cURL}`);
   }
 
-  createComment(postId: number): Observable<any> {
-    return this.httpClient.post(`${this.baseURL}/${postId}/${this.cURL}`, null);
+  createComment(comment: Comment, postId: number): Observable<any> {
+    return this.httpClient.post(`${this.baseURL}/${postId}/${this.cURL}`, comment);
   }
 
   getCommentById(postId: number, commentId: number): Observable<any> {
