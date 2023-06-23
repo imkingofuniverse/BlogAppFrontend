@@ -10,14 +10,14 @@ import { APIsService } from 'src/app/service/data/apis.service';
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent {
-  profileDetails: UserResponseDto;
+  profileDetails: UserResponseDto=new UserResponseDto(0,'','','','');
   userEmail: string | null;
 
   constructor(private apiService: APIsService, private authenticate: AuthenticationService,private router:Router) {
   }
   ngOnInit() {
     this.userEmail = localStorage.getItem('user');
-    this.apiService.getByEmail(this.userEmail).subscribe((response) => {
+    this.apiService.getUserByEmail(this.userEmail).subscribe((response) => {
       console.log(response);
       this.profileDetails = response;
     });

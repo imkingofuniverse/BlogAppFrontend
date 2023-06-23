@@ -1,1 +1,50 @@
-<p>edit works!</p>
+<h2>Editing Profile</h2>
+<div class="container">
+    <form (ngSubmit)="saveDetails()">
+        <hr>
+        <label class="form-label">First Name*</label>
+        <input type="text" class="form-control" [class.is-invalid]="first_name.touched && first_name.invalid" required
+            #first_name="ngModel" [(ngModel)]="userDetails.firstName" name="first_name">
+        <small *ngIf="first_name.touched && first_name.invalid" class="text-danger">
+            Fill this field!
+        </small>
+        <!-- <small *ngIf="error" class="text-danger">
+
+            {{error.error.firstName }}
+
+          </small> -->
+
+        <label class="form-label">Last name*</label>
+        <input type="text" class="form-control" [class.is-invalid]="last_name.touched && last_name.invalid" required
+            #last_name="ngModel" [(ngModel)]="userDetails.lastName" name=" last_name">
+        <small *ngIf="last_name.touched && last_name.invalid" class="text-danger">
+            Fill this field!
+        </small>
+        <!-- <small *ngIf="error" class="text-danger">
+              {{error.error.lastName}}
+            </small> -->
+
+            <label class="form-label">Email address*</label>
+            <input type="email" class="form-control" [class.is-invalid]="email.touched && email.invalid" required
+              #email="ngModel" [(ngModel)]="userDetails.email" name="email">
+            <small *ngIf="email.touched && email.invalid" class="text-danger">
+              Fill this field!
+            </small>
+          <!-- <small *ngIf="error" class="text-danger">
+            {{error.error.email}}
+          </small> -->
+
+          <label class="form-label">Bio*</label>
+            <input type="bio" class="form-control" [class.is-invalid]="bio.touched && bio.invalid" required
+              #bio="ngModel" [(ngModel)]="userDetails.bio" name="bio">
+            <small *ngIf="bio.touched && bio.invalid" class="text-danger">
+              Fill this field!
+            </small>
+          <!-- <small *ngIf="error" class="text-danger">
+            {{error.error.email}}
+          </small> -->
+          <button class="btn btn-success">Save</button>
+
+
+    </form>
+</div>

@@ -1,7 +1,10 @@
 export class UserResponseDto {
-    id:number;
-    firstName:string;
-    lastName:string;
-    email:string;
-    bio:string;
+    constructor(public id:number,
+       public firstName:string,
+       public lastName:string,
+       public email:string,
+       public bio:string){
+
+    }
+
 }
