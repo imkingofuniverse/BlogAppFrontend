@@ -58,6 +58,14 @@
             <button (click)="createComment(post.id)" class="btn btn-info">Write a Comment</button>
             <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
         </td>
+        <td>
+            <button (click)="updatePost(post.id)" class="btn btn-info">Update</button>
+            <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+
+            <button (click)="deletePost(post.id)" class="btn btn-danger"
+                style="margin-left: 10px">
+                Delete</button>
+        </td>
 
     </div>
 

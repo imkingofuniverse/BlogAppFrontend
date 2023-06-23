@@ -27,7 +27,7 @@ export class PostListComponent {
   }
 
   updatePost(id: number) {
-    this.router.navigate(['update-post', id]);
+    this.router.navigate(['updatepost', id]);
   }
 
   viewComment(id: number) {

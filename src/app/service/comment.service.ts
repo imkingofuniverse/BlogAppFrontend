@@ -28,8 +28,8 @@ export class CommentService {
     return this.httpClient.delete(`${this.baseURL}/${postId}/${this.cURL}/${commentId}`);
   }
 
-  updateCommentById(postId: number, commentId: number): Observable<any> {
-    return this.httpClient.put(`${this.baseURL}/${postId}/${this.cURL}/${commentId}`, null);
+  updateCommentById(postId: number, commentId: number, comment: Comment): Observable<any> {
+    return this.httpClient.put(`${this.baseURL}/${postId}/${this.cURL}/${commentId}`, comment);
   }
 
 

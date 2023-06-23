@@ -18,6 +18,8 @@ import { CreatePostComponent } from './components/create-post/create-post.compon
 import { GetCommentComponent } from './components/get-comment/get-comment.component';
 import { CreateCommentComponent } from './components/create-comment/create-comment.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { UpdatePostComponent } from './components/update-post/update-post.component';
+import { UpdateCommentComponent } from './components/update-comment/update-comment.component';
 
 
 @NgModule({
@@ -30,7 +32,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     PostListComponent,
     CreatePostComponent,
     GetCommentComponent,
-    CreateCommentComponent
+    CreateCommentComponent,
+    UpdatePostComponent,
+    UpdateCommentComponent
   ],
   imports: [
     BrowserModule,
