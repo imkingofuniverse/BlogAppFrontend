@@ -20,6 +20,7 @@ import { CreateCommentComponent } from './components/create-comment/create-comme
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { UpdatePostComponent } from './components/update-post/update-post.component';
 import { UpdateCommentComponent } from './components/update-comment/update-comment.component';
+import { AboutUsComponent } from './components/about-us/about-us.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { UpdateCommentComponent } from './components/update-comment/update-comme
     GetCommentComponent,
     CreateCommentComponent,
     UpdatePostComponent,
-    UpdateCommentComponent
+    UpdateCommentComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,
