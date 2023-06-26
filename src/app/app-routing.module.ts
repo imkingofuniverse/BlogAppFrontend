@@ -11,6 +11,8 @@ import { CreateCommentComponent } from './components/create-comment/create-comme
 import { UpdatePostComponent } from './components/update-post/update-post.component';
 import { UpdateCommentComponent } from './components/update-comment/update-comment.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
+import { ContactUsComponent } from './components/contact-us/contact-us.component';
+import { HomePageComponent } from './components/home-page/home-page.component';
 
 const routes: Routes = [
   { path: 'signin', component: LoginComponent },
@@ -24,6 +26,8 @@ const routes: Routes = [
   { path: 'updatecomment/:id1/:id2', component: UpdateCommentComponent },
   { path: 'viewcomment/:id', component: GetCommentComponent },
   { path: 'aboutus', component: AboutUsComponent },
+  { path: 'contactus', component: ContactUsComponent },
+  { path: 'homepage', component: HomePageComponent },
   { path: 'home', component: HomeComponent }
   // { path: '', component: AppComponent } // Add this line to map root URL to AppComponent
 ];

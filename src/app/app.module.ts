@@ -21,6 +21,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { UpdatePostComponent } from './components/update-post/update-post.component';
 import { UpdateCommentComponent } from './components/update-comment/update-comment.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
+import { HomePageComponent } from './components/home-page/home-page.component';
+import { ContactUsComponent } from './components/contact-us/contact-us.component';
 
 
 @NgModule({
@@ -36,7 +38,9 @@ import { AboutUsComponent } from './components/about-us/about-us.component';
     CreateCommentComponent,
     UpdatePostComponent,
     UpdateCommentComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    HomePageComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,
