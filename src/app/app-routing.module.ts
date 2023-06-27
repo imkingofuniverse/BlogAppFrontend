@@ -13,6 +13,7 @@ import { UpdateCommentComponent } from './components/update-comment/update-comme
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
 import { HomePageComponent } from './components/home-page/home-page.component';
+import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.component';
 
 const routes: Routes = [
   { path: 'signin', component: LoginComponent },
@@ -28,7 +29,8 @@ const routes: Routes = [
   { path: 'aboutus', component: AboutUsComponent },
   { path: 'contactus', component: ContactUsComponent },
   { path: 'homepage', component: HomePageComponent },
-  { path: 'home', component: HomeComponent }
+  { path: 'home', component: HomeComponent },
+  { path: '**', component: PagenotfoundComponent }
   // { path: '', component: AppComponent } // Add this line to map root URL to AppComponent
 ];
 

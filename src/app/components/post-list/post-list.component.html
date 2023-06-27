@@ -51,20 +51,22 @@
         <p>{{ post.category }}</p>
         <p>{{ post.content }}</p>
         <td>
-            <button (click)="viewComment(post.id)" class="btn btn-info">View Comments</button>
-            <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+            <button (click)="viewComment(post.id)" class="btn btn-info">View Comments<i class="fa fa-eye" aria-hidden="true"></i>
+            </button>
+            
         </td>
         <td>
-            <button (click)="createComment(post.id)" class="btn btn-info">Write a Comment</button>
-            <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+            <button (click)="createComment(post.id)" class="btn btn-info">Write a Comment
+            <i class="fa fa-solid fa fa-comment fa fa-beat-fade" style="color: #000000;"></i></button>
         </td>
         <td>
-            <button (click)="updatePost(post.id)" class="btn btn-info">Update</button>
-            <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+            <button (click)="updatePost(post.id)" class="btn btn-info">Update
+            <i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
 
             <button (click)="deletePost(post.id)" class="btn btn-danger"
                 style="margin-left: 10px">
-                Delete</button>
+                Delete<i class="fa fa-trash" aria-hidden="true"></i>
+            </button>
         </td>
 
     </div>

@@ -4,7 +4,8 @@
   }
 
   #bimg{
-    height: 280px;;
+    height: 280px;
+    width: 350px;
   }
   
   /*--------------------------------------------------------------
@@ -39,9 +40,15 @@
     font-size: 14px;
   }
   
+#seem:hover{
+    transform: scale(1.15);
+    transition: 0.3s;
+}
+
   .why-us .why-box .more-btn:hover {
     color: var(--color-primary);
     background: #fff;
+    transform: scale(1.2); 
   }
   
   .why-us .icon-box {
@@ -67,6 +74,23 @@
     width: 64px;
     height: 64px;
   }
+
+  #mvc1{
+    background-color: #b8e9ee;
+    margin:5px;
+    padding: 18px;
+  }
+
+  #memi{
+    justify-content: center;
+    padding: 5px;
+  }
+
+  #mvcp1, #mvcp2, #mvcp3{
+    background-color: rgb(255, 255, 255);
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }p
   
   .why-us .icon-box h4 {
     font-size: 20px;

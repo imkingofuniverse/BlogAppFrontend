@@ -23,6 +23,7 @@ import { UpdateCommentComponent } from './components/update-comment/update-comme
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { HomePageComponent } from './components/home-page/home-page.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
+import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.component';
 
 
 @NgModule({
@@ -40,7 +41,8 @@ import { ContactUsComponent } from './components/contact-us/contact-us.component
     UpdateCommentComponent,
     AboutUsComponent,
     HomePageComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    PagenotfoundComponent
   ],
   imports: [
     BrowserModule,
