@@ -10,8 +10,9 @@
             <input type="text" class="form-control" id="title" [(ngModel)]="comment.name" name="title"
                 required #titleField="ngModel">
             <div [hidden]="titleField.valid || titleField.untouched" class="alert alert-danger">
-                Enter Title
+                Enter Name
             </div>
+            <small *ngIf="error" class="text-danger">{{error.error.name}}</small>
         </div>
 
         <div class="form-group">
@@ -19,8 +20,9 @@
             <input type="text" class="form-control" id="imageName" [(ngModel)]="comment.email" name="imageName"
                 required #imageField="ngModel">
             <div [hidden]="imageField.valid || imageField.untouched" class="alert alert-danger">
-                Enter Image URL
+                Email Required
             </div>
+            <small *ngIf="error" class="text-danger">{{error.error.email}}</small>
         </div>
 
 
@@ -31,6 +33,7 @@
             <div [hidden]="contentField.valid || contentField.untouched" class="alert alert-danger">
             Content Required
             </div>
+            <small *ngIf="error" class="text-danger">{{error.error.content}}</small>
         </div>
     
         

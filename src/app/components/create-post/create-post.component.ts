@@ -11,6 +11,7 @@ import { PostService } from 'src/app/service/post.service';
 export class CreatePostComponent {
 
   post: Post = new Post();
+  error: any;
   constructor(private postService: PostService,
     private router: Router) { }
 
@@ -23,7 +24,9 @@ export class CreatePostComponent {
       alert("Blog Posted Successfully");
       this.goToPostList();
     },
-      error => console.log(error));
+    (error) => {
+      console.log(error);
+      this.error=error;});
   }
 
   goToPostList() {

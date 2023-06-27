@@ -51,19 +51,19 @@
         <p>{{ post.category }}</p>
         <p>{{ post.content }}</p>
         <td>
-            <button (click)="viewComment(post.id)" class="btn btn-info">View Comments<i class="fa fa-eye" aria-hidden="true"></i>
+            <button (click)="viewComment(post.id)" class="btn btn-info btn-sm">View Comments<i class="fa fa-eye" aria-hidden="true"></i>
             </button>
             
         </td>
         <td>
-            <button (click)="createComment(post.id)" class="btn btn-info">Write a Comment
+            <button (click)="createComment(post.id)" class="btn btn-info btn-sm">Write a Comment
             <i class="fa fa-solid fa fa-comment fa fa-beat-fade" style="color: #000000;"></i></button>
         </td>
         <td>
             <button (click)="updatePost(post.id)" class="btn btn-info">Update
             <i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
 
-            <button (click)="deletePost(post.id)" class="btn btn-danger"
+            <button (click)="deletePost(post.id)" class="btn btn-danger btn-sm"
                 style="margin-left: 10px">
                 Delete<i class="fa fa-trash" aria-hidden="true"></i>
             </button>
